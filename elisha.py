@@ -1,4 +1,6 @@
-
+from jsonschema import validate, ValidationError,Draft7Validator
+from pymongo import MongoClient
+import requests
 
 client = MongoClient("mongodb+srv://robin:VkplmHD1loRCTahp@cluster0.it781.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 db = client["medical_database"]
